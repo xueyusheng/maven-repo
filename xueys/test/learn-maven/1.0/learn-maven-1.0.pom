@@ -55,10 +55,18 @@
   	</plugins>
   </build>
   
+      <repositories>
+        <repository>
+            <id>maven-repo</id>
+            <url>https://raw.githubusercontent.com/xueyusheng/maven-repo/master</url>
+        </repository>
+    </repositories>
+    
+    
   <distributionManagement>
     <repository>
-      <id>xueyusheng-mvn-repo</id>
-      <url>file:/home/xueyusheng/mygithub/maven-repo/</url>
+      <id>maven-repo</id>
+      <url>file:/home/xueyusheng/mygithub/maven-repo/</url> 
     </repository>
   </distributionManagement>
 </project>

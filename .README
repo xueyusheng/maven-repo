@@ -1,0 +1,16 @@
+本地eclipse发布jar包仓库，使用git上传到github上，作为其它项目的远程仓库来使用
+<!-- 本地发布仓库地址 -->
+<distributionManagement>
+    <repository>
+      <id>xueyusheng-mvn-repo</id>
+      <url>file:/home/xueyusheng/mygithub/maven-repo/</url>
+    </repository>
+  </distributionManagement>
+
+<!-- 远程github仓库地址，maven-repo是github上的工程名 -->
+   <repositories>
+        <repository>
+            <id>maven-repo</id>
+            <url>https://raw.githubusercontent.com/xueyusheng/maven-repo/master</url>
+        </repository>
+    </repositories>
